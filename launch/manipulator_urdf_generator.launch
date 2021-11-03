@@ -13,6 +13,9 @@
     <arg name="gui" value="$(arg gui)"/>
     <arg name="use_sim_time" value="true"/>
   </include>
+
+<!--<param name="robot_position" command="$(find some_package)/scripts/generate_random_position.py"/>
+-->
  <param name="robot_description" command="$(find xacro)/xacro '$(find urdf_generator)/urdf/test.urdf.xacro'" />
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
